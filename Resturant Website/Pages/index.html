@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar Start -->
+        <div class="bg-image">
+            <div class="navbar">
+                <div class="logo">
+                    <h2>Logo</h2>
+                </div>
+                <input type="checkbox" id="nav-check" hidden>
+                <div class="logo-2">
+                    <h2>RestFood</h2>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="#" class="active">HOME</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#contact">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="dashboard">
+                    <div class="icon">
+                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="dashboard.html"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                </div>
+                <label for="nav-check" class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+            </div>
+
+            <!-- Navbar End-->
+
+            <div class="head-text">
+                <h2><i>Daily Menu</i></h2>
+                <h4 class="top">ENJOY WITH YOUR LOVED ONE'S</h4>
+            </div>
+        </div>
+
+
+
+        <!-- Favourite Dishes  -->
+
+        <div class="fav">
+            <div class="favDishes-text">
+                <div class="fav-text">
+                    <h2>OUR SPECIAL DISHES</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Sequi neque quibusdam provident!
+                        Eius tempora ab id magnam deserunt fugit a.</p>
+                </div>
+            </div>
+            <div class="fav-items">
+                <div class="fav-item">
+                    <img src="https://restfood.onlywebcoding.com.ua/images/special-dishes-2.jpg" alt="">
+                    <div class="fav-item-text">
+                        <h3>PASTA</h3>
+                        <P>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. Non, assumenda.</P>
+                        <b>$10.50</b>
+                    </div>
+                </div>
+                <div class="fav-item">
+                    <img src="https://images.pexels.com/photos/15846842/pexels-photo-15846842/free-photo-of-gourmet-breakfast-cream-cheese-and-cherry-tomato-on-toast.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
+                    <div class="fav-item-text">
+                        <h3>PATIES</h3>
+                        <P>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. Non, assumenda.</P>
+                        <b>$7.00</b>
+                    </div>
+                </div>
+                <div class="fav-item">
+                    <img src="https://images.pexels.com/photos/14122642/pexels-photo-14122642.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
+                    <div class="fav-item-text">
+                        <h3>BREAD</h3>
+                        <P>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. Non, assumenda.</P>
+                        <b>$4.00</b>
+                    </div>
+                </div>
+                <div class="fav-item">
+                    <img
+                        src="https://images.pexels.com/photos/2762939/pexels-photo-2762939.jpeg?auto=compress&cs=tinysrgb&w=600 alt=">
+                    <div class="fav-item-text">
+                        <h3>PIZAA</h3>
+                        <P>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. Non, assumenda.</P>
+                        <b>$6.00</b>
+                    </div>
+                </div>
+                <div class="fav-item">
+                    <img src="https://images.pexels.com/photos/892649/pexels-photo-892649.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
+                    <div class="fav-item-text">
+                        <h3>HEALTHY DIEt</h3>
+                        <P>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. Non, assumenda.</P>
+                        <b>$3.00</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider">
+                <!-- <i class="fa-solid fa-circle"></i>
+                <i class="fa-regular fa-circle"></i> -->
+                <i class="fa-solid fa-arrow-left" onclick="pre()"></i>
+                <i class="fa-solid fa-arrow-right" onclick="next()"></i>
+            </div>
+
+        </div>
+
+        <!-- Favourite Dishes End -->
+
+
+        <!-- Menu Page  -->
+
+        <div class="menu" id="menu">
+            <div class="menu-text">
+                <h2><i>Our Menu</i></h2>
+            </div>
+            <div class="menu-filter">
+                <div class="menu-buttons">
+                    <button class="active">All</button>
+                    <button>Pasta</button>
+                    <button>Burger</button>
+                    <button>Pizza</button>
+                    <button>Fries</button>
+                </div>
+            </div>
+
+
+            <!-- Items Part -->
+            <div class="items">
+                <div class="item">
+                    <img src="https://images.pexels.com/photos/20741663/pexels-photo-20741663/free-photo-of-burger-with-meat-and-vegetables.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
+                    <h4>Simple Paneer Burger</h4>
+                    <p>Single Patty</p>
+                    <div class="price">
+                        <p>Price : $8</p>
+                    </div>
+                    <div class="cart">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
+                    <h4>Eggs</h4>
+                    <p>Half Plate</p>
+                    <div class="price">
+                        <p> Price : $9</p>
+                    </div>
+                    <div class="cart">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://images.pexels.com/photos/3616956/pexels-photo-3616956.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
+                    <h4>Cheese Burger With Snacks</h4>
+                    <p>Single Patty</p>
+                    <div class="price">
+                        <p>Price : $14</p>
+                    </div>
+                    <div class="cart">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://images.pexels.com/photos/20793367/pexels-photo-20793367/free-photo-of-delicious-pizza-slices-with-tomatoes-olives-and-cheese.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
+                    <h4> Paneer Pizza</h4>
+                    <p>6 Pieces</p>
+                    <div class="price">
+                        <p> Price : $16</p>
+                    </div>
+                    <div class="cart">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://images.pexels.com/photos/36756/food-pizza-roll-baked.jpg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
+                    <h4>Curncy Roll</h4>
+                    <p>8 Combo </p>
+                    <div class="price">
+                        <p>Price : $10</p>
+                    </div>
+                    <div class="cart">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://images.pexels.com/photos/298217/pexels-photo-298217.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
+                    <h4>Cookies</h4>
+                    <p>Multiple</p>
+                    <div class="price">
+                        <p>Price : $6</p>
+                    </div>
+                    <div class="cart">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
+                    <h4>Strawberry Pizza</h4>
+                    <p>8 Pieces</p>
+                    <div class="price">
+                        <p>Price : $20</p>
+                    </div>
+                    <div class="cart">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
+                    <h4>Onion Rolls</h4>
+                    <p>2 Sets</p>
+                    <div class="price">
+                        <p> Price : $6</p>
+                    </div>
+                    <div class="cart">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://images.pexels.com/photos/803963/pexels-photo-803963.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
+                    <h4>Pasta</h4>
+                    <p>Half Palte</p>
+                    <div class="price">
+                        <p>Price : $10</p>
+                    </div>
+                    <div class="cart">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://images.pexels.com/photos/1603901/pexels-photo-1603901.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
+                    <h4> Saled Burger</h4>
+                    <p>3 Sets</p>
+                    <div class="price">
+                        <p> Price : $15</p>
+                    </div>
+                    <div class="cart">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://images.pexels.com/photos/769969/pexels-photo-769969.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
+                    <h4>Chowmein</h4>
+                    <p>Half Plate</p>
+                    <div class="price">
+                        <p>Price : $5</p>
+                    </div>
+                    <div class="cart">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://images.pexels.com/photos/718742/pexels-photo-718742.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
+                    <h4>Paneer Sabji</h4>
+                    <p>Full Plate</p>
+
+                    <div class="price">
+                        <p>Price : $7</p>
+                    </div>
+                    <div class="cart">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Menu Part End-->
+
+
+        <!-- About Part  -->
+
+
+        <section class="about_section layout_padding">
+            <div class="container  ">
+        
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="img-box">
+                    <img src="https://themewagon.github.io/feane/images/about-img.png" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <div class="heading_container">
+                      <h2>
+                        We Are Feane
+                      </h2>
+                    </div>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                      in some form, by injected humour, or randomised words which don't look even slightly believable. If you
+                      are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
+                      the middle of text. All
+                    </p>
+                    <a href="">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+        <!-- About Part End -->
+
+
+        <!-- Services Page  -->
+
+        <div class="services" id="services">
+            <div class="services-text">
+                <h2>Our Services</h2>
+            </div>
+            <div class="services-data">
+                <div class="services-data-info">
+                    <img src="" alt="">
+                    <h4>Drinks</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit commodi explicabo beatae unde
+                        quas!</p>
+                </div>
+                <div class="services-data-info">
+                    <img src="" alt="">
+                    <h4>Sea Foods</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit commodi explicabo beatae unde
+                        quas!</p>
+                </div>
+                <div class="services-data-info">
+                    <img src="" alt="">
+                    <h4>Junk Foods</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit commodi explicabo beatae unde
+                        quas!</p>
+                </div>
+                <div class="services-data-info">
+                    <img src="" alt="">
+                    <h4>Fresh Salad</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit commodi explicabo beatae unde
+                        quas!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Page End -->
+
+        <!-- About Section  -->
+        <footer>
+            <div class="contact" id="contact">
+                <div class="contact-text">
+                    <h2>Contact Us</h2>
+                </div>
+                <form>
+                    <p>Full Name</p>
+                    <input type="text" placeholder="Your Full name"><br>
+                    <p>Email</p>
+                    <input type="text" placeholder="Your email"><br>
+                    <p>Message</p>
+                    <textarea rows="5"></textarea><br>
+                    <button id="btn">Submit</button>
+                </form>
+                <div class="social-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <hr>
+                <div class="copyright-text">
+                    <p>Copyright © All rights reserved.</p>
+                    <p>Made by Prince❤️</p>
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- About Section  End-->
+    </div>
+</body>
+
+</html>
