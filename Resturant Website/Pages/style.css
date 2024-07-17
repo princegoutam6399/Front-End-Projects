@@ -69,26 +69,6 @@ body{
     color: rgb(255, 248, 248);
 }
 
-.hamburger {
-    display: none;
-    height: fit-content;
-    cursor: pointer;
-    padding: 3px 8px;
-    border-radius: 5px;
-    transition: 0.2s;
-}
-
-.hamburger:hover {
-    background-color: white;
-}
-
-.hamburger div {
-    width: 30px;
-    height: 2px;
-    margin: 6px 0;
-    background-color: black;
-}
-
 .head-text {
     padding-top: 150px;
     text-align: center;
@@ -140,6 +120,8 @@ body{
 }
 
 /* Menu section End*/
+
+
 
 
 /* Fav Item Part  */
@@ -242,6 +224,38 @@ p,
 
 /* Fav Item Part End  */
 
+
+/* About Part  */
+
+
+.about{
+    background-color: rgb(27, 25, 25);
+    margin-top: 20px;
+    min-height: 150vh;
+}
+.about .img-box img{
+    padding: 20px;
+    width: 600px; 
+    float: left;
+}
+
+.detail-box {
+    padding-top: 100px;
+    color: #fff;
+}
+.detail-box button{
+    margin-top: 30px;
+    background-color: orange;
+    color: #0e0d0d;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+
+
+
+/* About Part End  */
 
 /* Services Page  */
 

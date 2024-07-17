@@ -5,52 +5,294 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
 
     <!-- Header Section  -->
 
-    <div class="nav">
-        <div class="bars">
-            <input type="checkbox" id="toggle">
-            <label for="toggle" class="fa-solid fa-bars"></label>
-        </div>
-        <div class="logo">
-            <a href="#">Flower.</a>
-        </div>
-        <div class="list">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Products</li></a>
-            <a href="#"><li>Review</li></a>
-            <a href="#"><li>Contact</li></a>
-        </div>
-        <div class="icon">
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-            <i class="fa-solid fa-user"></i>
-        </div>
+    <div class="container-fluid bg-success-subtle text-white">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-lg">
+                <a class="navbar-brand" href="#">Flower.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item me-4">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">Review</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="icon ms-auto">
+                        <i class="fa-solid fa-user text-black"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
 
     <!-- Header Section End -->
 
-    <!-- Main Part  -->
-    
-    <div class="main">
-        <div class="text">
-            <h1>Fresh Flowers</h1>
+
+    <!-- Front Page  -->
+
+
+    <div class="main p-5"
+        style="background-image: url('./tulips.jpg'); width: 100%; height: 100vh; background-size: cover;">
+        <div class="text text-white-50">
+            <h1 class="color">Fresh Flowers</h1>
             <h2>Natural & Beautiful Flowers</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Repudiandae laboriosam <br>iste aut cumque atque nam sequi, <br> hic laborum earum odio.</p>
-        </div>
-        <div class="btn">
-            <button>Shop Now</button>
+            <p>Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Repudiandae laboriosam <br>iste aut cumque
+                atque nam sequi, <br> hic laborum earum odio.</p>
+            <div class="btn">
+                <button>Shop Now</button>
+            </div>
         </div>
     </div>
-    
-    <!-- Main Part End -->
+
+
+    <!--Front Page End -->
+
+    <!-- Products Part  -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="">
+                <div class="product-head p-5 text-center">
+                    <h2 class="fs-1">Our Products</h2>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container ">
+            <div class="row mt-3 mb-2">
+                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                    <div class="card mt-3">
+                        <img src="https://images.pexels.com/photos/13092143/pexels-photo-13092143.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="">
+                    </div>
+                    <div class="item-details ms-1 mt-3">
+                        <div class="card-body">
+                            <p class="card-text">Flower Bokeh</p>
+                        </div>
+                        <div class="rating mt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price mt-2">
+                            <span>$1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                    <div class="card mt-3">
+                        <img src="https://images.pexels.com/photos/18353276/pexels-photo-18353276/free-photo-of-close-up-of-pink-roses.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="">
+                    </div>
+                    <div class="item-details ms-1 mt-3">
+                        <div class="card-body">
+                            <p class="card-text">Flower</p>
+                        </div>
+                        <div class="rating mt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price mt-2">
+                            <span>$1.5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                    <div class="card mt-3">
+                        <img src="https://images.pexels.com/photos/13306278/pexels-photo-13306278.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="">
+                    </div>
+                    <div class="item-details ms-1 mt-3">
+                        <div class="card-body">
+                            <p class="card-text">Red Rose</p>
+                        </div>
+                        <div class="rating mt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price mt-2">
+                            <span>$2.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                    <div class="card mt-3">
+                        <img src="https://images.pexels.com/photos/9957265/pexels-photo-9957265.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="">
+                    </div>
+                    <div class="item-details ms-1 mt-3">
+                        <div class="card-body">
+                            <p class="card-text">Golden Flower</p>
+                        </div>
+                        <div class="rating mt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price mt-2">
+                            <span>$1.5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                    <div class="card mt-3">
+                        <img src="https://images.pexels.com/photos/9070118/pexels-photo-9070118.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="">
+                    </div>
+                    <div class="item-details ms-1 mt-3">
+                        <div class="card-body">
+                            <p class="card-text">Tulips</p>
+                        </div>
+                        <div class="rating mt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price mt-2">
+                            <span>$1.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                    <div class="card mt-3">
+                        <img src="https://images.pexels.com/photos/13282385/pexels-photo-13282385.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="">
+                    </div>
+                    <div class="item-details ms-1 mt-3">
+                        <div class="card-body">
+                            <p class="card-text">Pink Rose</p>
+                        </div>
+                        <div class="rating mt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price mt-2">
+                            <span>$2.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                    <div class="card mt-3">
+                        <img src="https://images.pexels.com/photos/14582450/pexels-photo-14582450.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="">
+                    </div>
+                    <div class="item-details ms-1 mt-3">
+                        <div class="card-body">
+                            <p class="card-text">Red Lotus</p>
+                        </div>
+                        <div class="rating mt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price mt-2">
+                            <span>$2.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                    <div class="card mt-3">
+                        <img src="https://images.pexels.com/photos/2454515/pexels-photo-2454515.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="">
+                    </div>
+                    <div class="item-details ms-1 mt-3">
+                        <div class="card-body">
+                            <p class="card-text">Sun-Flower</p>
+                        </div>
+                        <div class="rating mt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price mt-2">
+                            <span>$2.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                    <div class="card mt-3">
+                        <img src="https://images.pexels.com/photos/9879552/pexels-photo-9879552.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="">
+                    </div>
+                    <div class="item-details ms-1 mt-3">
+                        <div class="card-body">
+                            <p class="card-text">White Lotus</p>
+                        </div>
+                        <div class="rating mt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price mt-2">
+                            <span>$3.00</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Products Part End -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
