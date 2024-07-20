@@ -5,6 +5,30 @@
     font-family: "Poppins",sans-serif;
 }
 
+:root{
+    --firstcolor:white;
+    --secondcolor:black;
+    --thirdcolor:skyblue;
+    --fourthcolor:rgb(123, 255, 125);
+}
+
+h2,p,img,form,.button{
+    animation: animate ease-in-out both;
+    animation-timeline:view();
+    animation-range: entry 30% cover 50%;
+
+}
+@keyframes animate{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .navbar-nav li a:hover{
     color: salmon;
@@ -19,7 +43,8 @@
     align-items: center;
 }
 .main .color{
-    color: rgb(140, 255, 25);
+    /* color: rgb(140, 255, 25); */
+    color: var(--fourthcolor);
 }
 .main .btn button{
     padding: 10px 30px;
