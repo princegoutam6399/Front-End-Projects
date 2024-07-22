@@ -1,46 +1,14 @@
-// const btns = document.querySelectorAll(".menu-buttons button");
-// const imgs = document.querySelectorAll(".item img");
+const loginDialog = document.getElementById("loginDialog");
+const headText = document.querySelector(".head-text");
+const button = document.getElementById("login");
 
-// for (let i = 1; i < btns.length; i++) {
-//     btns[i].addEventListener("click", filterImg);
+loginDialog.addEventListener("click",()=>{
+    document.body.classList.add("openDialog");
+    document.body.classList.add("hide");
+});
 
-// }
+button.addEventListener("click",()=>{
+    document.body.classList.add("hideDialog");
+    document.body.classList.remove("hide");
+})
 
-// function setActiveBtn(e) {
-//     btns.forEach(btn => {
-//         btn.classList.remove("btn-clicked");
-//     })
-
-//     e.target.classList.add("btn-clicked");
-// }
-
-// function filterImg(e) {
-//     setActiveBtn(e);
-
-//     imgs.forEach(img => {
-//         img.classList.remove('img-shrink');
-//         img.classList.add('img-expand');
-
-
-
-
-//         const imgType = parseInt(img.dataset.img);
-
-//         const btnType = parseInt(e.target.dataset.btn);
-
-//         if (imgType !== btnType) {
-//             img.classList.add('img-shrink');
-//             img.classList.remove('img-expand');
-//         }
-//     })
-// }
-
-// btns[0].addEventListener('click', (e) => {
-//     setActiveBtn(e);
-
-//     imgs.forEach(img => {
-//         img.classList.add('img-expanded');
-//         img.classList.remove('img-shrink');
-//     })
-
-// })

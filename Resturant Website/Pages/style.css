@@ -10,6 +10,7 @@
 
 
 html{
+    scrollbar-color:yellow;
     scroll-behavior: smooth;
 }
 body{
@@ -72,8 +73,13 @@ body{
 }
 
 .head-text {
+    position: relative;
     padding-top: 150px;
     text-align: center;
+}
+
+.hide .head-text{
+    display: none;
 }
 
 .top {
@@ -86,6 +92,50 @@ body{
 .container {
     min-height: 100vh;
 }
+
+
+/* login form  */
+
+.login{
+    padding-top: 5%;
+    border-radius: 10px;
+    margin: auto;
+    width: 40%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 74vh;
+    display: none;
+}
+.login input{
+    width: 70%;
+    border-radius: 5px;
+    transition: 0.8s;
+}
+.login p{
+    margin-left: 15%;
+}
+
+#login{
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+    background:rgb(255, 234, 0);
+    cursor: pointer;
+}
+
+.openDialog .login{
+    display: block;
+}
+.hideDialog .login{
+    display: none;
+}
+
+
+/* login form End  */
+
 
 /* Menu section  */
 
@@ -326,7 +376,7 @@ form p{
 form input,textarea{
     padding: 10px;
     width: 60%;
-    border: none;
+    border: 1px solid rgb(142, 134, 134);
 }
 #btn{
     background: transparent;
