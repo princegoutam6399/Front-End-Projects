@@ -25,9 +25,11 @@ body{
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    /* position: fixed;
+    backdrop-filter: blur(20px); */
 }
 .bg-image{
-    color: white;
+    color: rgb(255, 255, 255);
     height: 100vh;
     /* background-image: url('../img/bg.jpg'); */
     background-image: url('../img/bg2.jpg');
@@ -196,16 +198,20 @@ body{
     display:inline-flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
+
 .fav-item img{
-    /* max-width: 100%; */
     width: 300px;
     height: 300px;
     object-fit: cover;
 }
 .fav-item .fav-item-text{
     text-align: center;
+}
+.fav-item-text p{
+    font-size: 16px;
 }
 
 .slider{
@@ -280,28 +286,46 @@ p,
 
 
 .about{
-    background-color: rgb(27, 25, 25);
-    margin-top: 20px;
-    min-height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    min-height: 100vh;
+    width: 100%;
 }
-.about .img-box img{
+.about .container .head-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
     padding: 20px;
-    width: 600px; 
-    float: left;
+   width: 100%;
+}
+.img-box{
+    margin-top: 40px;
+}
+
+.about .img-box img{
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    background: transparent;
 }
 
 .detail-box {
-    padding-top: 100px;
-    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    color: #131212;
 }
-.detail-box button{
-    margin-top: 30px;
-    background-color: orange;
-    color: #0e0d0d;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-    border-radius: 20px;
+.detail-box a i{
+    padding-bottom: 20px;
+    margin-top: 40px;
+    padding: 10px;
+}
+.detail-box a i:hover{
+    color: #675cff;
+    border-radius: 50% ;
+    background-color: #b7b7b7;
 }
 
 
@@ -310,8 +334,26 @@ p,
 
 /* Services Page  */
 
-.services-data-info{
+
+
+
+.services{
+    background-color: rgb(255, 231, 10);
+    min-height: 100vh;
+}
+.services-data{
     margin-top: 40px;
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.services-data-info {
+    display:inline;
+   justify-content: center;
+   align-items: center;
+    padding: 20px;
 }
 
 
@@ -321,27 +363,18 @@ p,
     object-fit: cover;
     border-radius: 50% 50%;
 }
-
-.services{
-    background-color: rgb(255, 231, 10);
+.services-data-info p{
+    font-size: 14px;
 }
 
+
 .services-text{
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     font-size: 40px;
 }
 
-.services-data{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 15px
-}
-.services-data-info{
-    text-align: center;
-    padding-bottom: 30px;
-}
+
 
 /* Services Page End  */
 
