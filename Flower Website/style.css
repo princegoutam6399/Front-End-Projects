@@ -47,7 +47,6 @@ h2,p,img,form,.button{
     color: var(--fourthcolor);
 }
 .main .btn button{
-    padding: 10px 30px;
     background-color: skyblue;
     border: none;
     border-radius: 7px;
